@@ -1,0 +1,72 @@
+@import "../../../../styles/variables.scss";
+
+.experienceCard{
+  display: flex;
+  width: calc(50% - 1rem);
+  border-radius: $card-radius;
+  background-color: $Neutral-white;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(114,114,114,0.37); 
+  box-shadow: 0px 0px 11px 0px rgba(114,114,114,0.37);
+
+  @media screen and (max-width: $screen-md) {
+    width: calc(100% - 1rem);
+  }
+
+  .imgCard{
+    width: 40%;
+    overflow: hidden;
+    .imgToRender{
+    border-radius: $card-radius 0 0 $card-radius;
+  }
+  }
+
+  .description{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 16px;
+    width: 60%;
+
+    .title{
+      display: flex;
+      justify-content: space-between;
+      h2{
+        color: $Blackish-green;
+        font-size: 32px;
+        font-weight: 600;
+      }
+      .price{
+        color: $Slamon;
+        font-size: 24px;
+        font-weight: 500;
+      }
+    }
+
+    .location{
+      font-size: 22px;
+      font-weight: 600;
+      i{
+        color: $Blackish-green;
+        font-size: 20px;
+      }
+    }
+
+    .textDescription{
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4; 
+      -webkit-box-orient: vertical;
+    }
+
+    .seeMore{
+      border-radius: $button-radius;
+      background-color: $Mind-green;
+      cursor: pointer;
+      color: $Blackish-green;
+      font-weight: 600;
+      padding: 16px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../../styles/variables.scss";
+
+header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top:0;
+  background: $Neutral-white;
+  padding: 16px;
+
+  .logoHeader{
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+    }
+  }
+
+  .actionsButtons{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link-nav-login{
+      padding: 16px 24px;
+      border-radius: 8px;
+      color: $Blackish-green;
+      text-decoration: none;
+
+      @media screen and (max-width: $screen-md) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+    
+    .link-nav-signup{
+      background: $Blackish-green;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      padding: 16px 24px;
+
+      @media screen and (max-width: $screen-md) {
+        display: none;
+        visibility: hidden;
+      }
+    }
+
+    i{
+      display: none;
+      visibility: hidden;
+      @media screen and (max-width: $screen-md) {
+        display: block;
+        visibility: visible;
+        font-size: 40px;
+      }
+    }
+  }
+}
+

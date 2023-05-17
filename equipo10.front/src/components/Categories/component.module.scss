@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+
+
+.categoriesSection{
+  background-color: $Ligth-green;
+  padding: 2rem;
+
+  .sectionTitle{
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+
+  .categoriesList{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @media screen and (max-width: $screen-md) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
